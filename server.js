@@ -15,7 +15,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://inventory-frontend-app.netlify.app/",
+      "https://inventory-frontend-app.netlify.app",
     ],
     credentials: true,
   })
@@ -28,7 +28,7 @@ app.use(cookieParser());
 
 
 app.get("/", (req, res) => {
-  res.status(200).send("Canova Backend is Running");
+  res.status(200).send("Inventory Backend is Running");
 });
 
 
